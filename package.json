@@ -1,0 +1,25 @@
+{
+  "name": "express-website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node app.js --presets es2015"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "nodemailer": "*",
+    "nodemon": "^1.18.3",
+    "sendgrid": "^5.2.3"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0"
+  }
+}

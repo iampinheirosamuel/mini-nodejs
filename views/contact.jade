@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  // Main jumbotron for a primary marketing message or call to action=
+  .container
+    h6 Website: #{title}
+    hr
+    form(method='post', action='contact/send')
+      .form-row
+        .form-group.col-md-6
+          label(for='inputEmail4') Name
+          input#inputEmail4.form-control(type='text',name='name', placeholder='Name')
+      .form-row
+        .form-group.col-md-6
+          label(for='inputEmail4') Email
+          input#inputEmail4.form-control(type='email',name='email' placeholder='Email')
+      .form-row
+        .form-group.col-md-6
+          label(for='inputCity') Message
+          textarea#exampleFormControlTextarea1.form-control(rows='3',name='message')     
+      button.btn.btn-primary(type='submit') Submit
