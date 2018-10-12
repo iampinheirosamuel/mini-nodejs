@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 
 // nodemailer
 router.post('/send', (req, res) => {
-  sendgrid.setApiKey('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');
+  sendgrid.setApiKey('');
   const msg = {
     from: 'Website <pinheirolaoluwa@gmail.com>',
     to: 'samuel.pinheiro@multiskills-ng.com',
